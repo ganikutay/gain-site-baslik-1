@@ -1,0 +1,361 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: rgb(83, 83, 83);
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+	width: 1140px; /* Container imizin genisligini verdik */
+	margin-left: auto; /* sagdan ve soldan ortalamak icin kullaniyoruz, ustte 1140px demistik, macbookta full ekran 1440px. Buna gore yaziya border-color vererek gore bilirsin, nasil ortalandigini..*/
+	margin-right: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
+    /*border: 1px solid rgb(0, 255, 170);*/
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+/*navbar*/
+
+nav {
+	font-family: Montserrat;
+	background-color: #2C3E50;
+	color: #fff;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+    /*border: 1px solid red;*/
+}
+
+#logo-box {
+	color: #fff;
+	font-weight: 700;
+	font-size: 3.2rem;
+    /*border: 1px solid red;*/
+    display: inline-block;
+}
+
+.logo{
+    font-weight: 700;
+	font-size: 3.2rem;
+    display: inline-block;
+}
+
+/*----------- ANASAYFA LOGO VE BASLIK-------------------*/
+#anasayfa-logo{
+    
+    width: 60px;
+    filter:invert(100%); /* Renkleri tersine cevirme. svg leri color ile degistiremedim??*/
+    margin-left: 4rem;
+}
+
+#anasayfa-baslik{
+    color: #fff;
+}
+
+
+
+/*----------------- SOLDAKI KUCUK LOGO  ------------*/
+#sol-logo{
+    /*background-image: url('gain-logo.png');*/
+    width: 5rem;
+    height: 6rem;
+    
+    margin-left: 0;
+    display: inline-block;
+
+    position: relative;
+    top: .5rem;
+    left: .5rem;
+    
+    transition: 0.6s;
+}
+
+/* logo HOVER */
+#sol-logo:hover{
+    /*background-image: url('gain-logo-tersi.png');
+    width: "35px";
+    margin-left: 40px;
+    position: absolute;
+    top: 40px;*/
+    filter:invert(100%); /* Renkleri tersine cevirme */
+    transition: 0.6s;
+}
+
+
+
+
+
+/* gaincoinfiyat NORMAL */
+#gaincoinfiyat{
+    color: green;
+    
+    /*height: 5rem;*/
+    padding: .5rem 0;
+    
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    /*margin-left: 1.5rem;*/ 
+    display: inline-block;
+
+    border-left: 0.2rem solid #535353;
+    border-radius: 0.1rem;
+    padding-left: 0.5rem;
+    transition: 0.6s;
+    position: relative;
+    top: -.8rem;
+    
+}
+
+/* gaincoinfiyat HOVER */
+#gaincoinfiyat:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    /*margin-left: 1.5rem;*/
+    transition: 0.6s;
+}
+
+
+
+
+
+
+/* gaincoin NORMAL */
+#gaincoin{
+    color: black;
+    font-weight: 900;
+    font-size: 1.8rem;
+
+    text-decoration: none;
+    margin-left: .1rem; 
+    
+    border-right: .2rem solid #535353;
+    border-radius: .1rem;
+    display: inline-block;
+
+    /*background-color: violet;*/
+    width: 5rem;
+    height: 4rem;
+    transition: 0.6s;
+
+    line-height:1.8rem;
+}
+
+/* gaincoin HOVER */
+#gaincoin:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-left: .1rem; 
+
+    transition: 0.6s;
+}
+
+
+#bsc{
+    /*color: black;*/
+    /*background-color: violet;*/
+    
+    clear: both;
+    color: rgb(245, 188, 3) ;/* !importent koyuldugunda hover verilmiyor ,calismiyor*/
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: .5rem; 
+    display: inline-block;
+
+
+    width: 11rem;
+    transition: 0.6s; /* SADECE HOVER A DEGIL BURAYADA EKLEMELIYIZ!!!!!!*/
+}
+
+#bsc:hover{
+    transition: 0.6s; /* normal yazilarda box-shadow yazmiyoruz!!!!!!*/
+    color: rgb(132, 0, 255);
+}
+
+
+
+
+/*------------------ WALLET CONNECT ---------------------*/
+
+#wallet-sosyal-medya{
+    width: 18rem;
+    height: 8rem;
+    float: right;
+    /*margin-top: 1rem;
+    margin-right: 1rem;
+    */
+    /*border: 1px solid salmon;*/
+}
+
+
+/* Connect butonumuzu ayarliyoruz*/
+#ConnectID{
+    margin-top: 3.5rem;
+    width: 8rem;
+    /*float: right; /*butonu sayfanin sag tarafina yolladik*/
+        
+    font-size: 1.5rem;
+    background-color: rgb(12, 116, 29);
+    color: white;
+    padding: 1rem 1rem;
+    /*margin: 7px 0;*/
+    /*margin-top: 2rem;
+    margin-right: 3%; /*sagdan % 8 uzaklastirdim.Sayfa buyusede kuculsede*/
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    
+
+    /*display: inline-block;*/
+    transition: 0.6s;
+    transition: box-shadow 0.6s;
+    }
+    
+    
+/* Connect butonuna hover olayı gerçekleştirğinde arkaplan rengini degistiriyoruz */
+#ConnectID:hover{
+    background-color: rgb(43, 192, 55);
+    /*color: rgb(49, 133, 182);*/
+    
+    width: 8rem;
+    font-size: 1.5rem;
+    
+    
+    transition: 0.6s;
+    transition: box-shadow 0.6s;
+    /*transition-timing-function: ease;     pek bi ise yaramadi*/
+    
+    /*box-shadow: 0px 10px 20px 2px rgba(0,0,0,0.1) ,10px 0px 20px 2px rgba(0,0,0,0.1), 0px -10px 20px -2px rgba(0,0,0,0.1), -10px 0px 20px -2px rgba(0,0,0,0.1); 
+    */
+    box-shadow: 0 1rem 2rem .2rem rgba(52, 231, 133, 0.1) ,1rem 0 2rem .2rem rgba(52, 231, 133, 0.1), 0 -1rem 2rem -.2rem rgba(52, 231, 133, 0.1), -1rem 0 2rem -.2rem rgba(52, 231, 133, 0.1); 
+
+        
+    }
+
+
+
+
+
+
+
+
+
+/*------------SOSYAL MEDYA----------------------*/
+
+.sosyal-medya{
+    float: right;
+    /*margin-right: 3%;*/
+    text-decoration: none;
+    font-size: 27px;  
+}
+
+.twitter-icon{
+margin: 10px 5px;
+display: inline-block;
+}
+
+.telegram-icon{
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+#twitter-i{
+    color: rgb(41, 187, 255);
+    transition: 0.6s;
+
+}
+
+#telegram-i{
+    color: rgb(41, 187, 255);
+    transition: 0.6s;
+
+}
+
+#twitter-i:hover{
+    color: whitesmoke;
+    transition: 0.6s;
+
+}
+
+#telegram-i:hover{
+    color: whitesmoke;
+    transition: 0.6s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+	
+	.container {
+		max-width: 540px;
+	}
+	
+}
+
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;	
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
